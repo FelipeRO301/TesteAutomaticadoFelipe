@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-06-15T17:18:36.392114" rpa="false" schemaversion="5">
+<suite id="s1" name="Mercadolivre Testes" source="c:\FelipeTrabalhoDeAutomacaoTestes\mercadolivre_testes.robot">
+<test id="s1-t1" name="Caso de Teste 01 - Acessar o menu &quot;Supermercado&quot; do site" line="7">
+<kw name="Abrir o navegador" owner="mercadolivre_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-15T17:18:36.548436" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-15T17:18:36.548436" elapsed="1.570232"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-15T17:18:38.118668" elapsed="0.042865"/>
+</kw>
+<status status="PASS" start="2024-06-15T17:18:36.543426" elapsed="1.618107"/>
+</kw>
+<kw name="Acessar a home page do site Mercadolivre.com.br" owner="mercadolivre_resources">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-06-15T17:18:38.161533" level="INFO">Opening url 'https://www.mercadolivre.com.br/'</msg>
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-06-15T17:18:38.161533" elapsed="1.090656"/>
+</kw>
+<status status="PASS" start="2024-06-15T17:18:38.161533" elapsed="1.090656"/>
+</kw>
+<kw name="Entrar no menu &quot;Ofertas&quot;" owner="mercadolivre_resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-15T17:18:39.260843" level="INFO">Clicking element 'locator-//a[@href='https://www.mercadolivre.com.br/ofertas/supermercado#nav-header'][contains(.,'Supermercado')]'.</msg>
+<msg time="2024-06-15T17:18:39.748152" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-15T17:18:39.748152" level="FAIL">Element with locator 'locator-//a[@href='https://www.mercadolivre.com.br/ofertas/supermercado#nav-header'][contains(.,'Supermercado')]' not found.</msg>
+<arg>locator-${OFERTAS}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-06-15T17:18:39.258264" elapsed="0.503437">Element with locator 'locator-//a[@href='https://www.mercadolivre.com.br/ofertas/supermercado#nav-header'][contains(.,'Supermercado')]' not found.</status>
+</kw>
+<status status="FAIL" start="2024-06-15T17:18:39.256176" elapsed="0.505525">Element with locator 'locator-//a[@href='https://www.mercadolivre.com.br/ofertas/supermercado#nav-header'][contains(.,'Supermercado')]' not found.</status>
+</kw>
+<kw name="Verificar se aparece a frase &quot;Aproveite esses preços agora mesmo!&quot; | Mercadolivre.com.br" owner="mercadolivre_resources">
+<status status="NOT RUN" start="2024-06-15T17:18:39.761701" elapsed="0.000000"/>
+</kw>
+<kw name="Verificar se o titulo da pagina fica &quot;Aproveite esses preços agora mesmo!&quot; | Mercadolivre.com.br&quot;" owner="mercadolivre_resources" source_name="Verificar se o titulo da pagina fica &quot;${TITULO}&quot;">
+<status status="NOT RUN" start="2024-06-15T17:18:39.761701" elapsed="0.000000"/>
+</kw>
+<kw name="Verificar se aparece a categoria &quot;Ofertas&quot; | Mercadolivro.com.br&quot;" owner="mercadolivre_resources" source_name="Verificar se aparece a categoria &quot;${NOME_CATEGORIA}&quot;">
+<status status="NOT RUN" start="2024-06-15T17:18:39.761701" elapsed="0.000000"/>
+</kw>
+<doc>Esse verifica se estou no menu</doc>
+<tag>menus</tag>
+<status status="FAIL" start="2024-06-15T17:18:36.543426" elapsed="3.221785">Element with locator 'locator-//a[@href='https://www.mercadolivre.com.br/ofertas/supermercado#nav-header'][contains(.,'Supermercado')]' not found.</status>
+</test>
+<doc>Essa suite de teste é para testar o site do mercadolivre</doc>
+<status status="FAIL" start="2024-06-15T17:18:36.392114" elapsed="3.373097"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">menus</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Mercadolivre Testes">Mercadolivre Testes</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
